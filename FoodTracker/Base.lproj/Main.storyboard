@@ -55,6 +55,10 @@
                             <constraint firstAttribute="trailingMargin" secondItem="UhT-zA-AjD" secondAttribute="trailing" id="vLT-HE-RVB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mealNameLabel" destination="Grl-Zq-OlP" id="5DE-zY-Nlk"/>
+                        <outlet property="nameTextField" destination="Ca6-wt-FNd" id="GFv-BN-nhH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
