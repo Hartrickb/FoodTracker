@@ -23,6 +23,7 @@ class RatingControl: UIView {
     // MARK: Initialization
     
     override func layoutSubviews() {
+        print("layoutSubviews")
         
         // Set the button's width and height to a square the size of the frame's height
         let buttonSize = Int(frame.size.height)
@@ -58,6 +59,7 @@ class RatingControl: UIView {
     }
     
     override var intrinsicContentSize: CGSize {
+        print("intrinsicContentSize")
         let buttonSize = Int(frame.size.height)
         let width = (buttonSize * starCount) + (spacing * (starCount - 1))
         
@@ -66,6 +68,7 @@ class RatingControl: UIView {
     
     // MARK: Button Action
     func ratingButtonTapped(button: UIButton) {
+        print("ratingButtonTapped")
         rating = ratingButtons.index(of: button)! + 1
         
         updateButtonSelectionStates()
@@ -73,6 +76,7 @@ class RatingControl: UIView {
     
     func updateButtonSelectionStates() {
         
+        print("updateButtonSelectionStates")
         for (index, button) in ratingButtons.enumerated() {
             // If the index of a button is less than a rating, that button should be selected
             button.isSelected = index < rating
