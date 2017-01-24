@@ -31,7 +31,7 @@ class MealTableViewController: UITableViewController {
             if let selectedIndexPath = tableView.indexPathForSelectedRow {
                 // Update an existing meal
                 meals[selectedIndexPath.row] = meal
-                tableView.reloadRows(at: [selectedIndexPath], with: .none)
+                tableView.reloadRows(at: [selectedIndexPath], with: .fade)
             } else {
             
                 // Add a new meal
